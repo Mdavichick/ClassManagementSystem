@@ -8,10 +8,12 @@ public class ClassEngine {
 
         // Display our options and ensure the input is valid
         ClassDriver.displayOptions();
+        System.out.print("-> ");
         int choice = obj.nextInt();
         while (choice >= 0 && choice > 2){
             System.out.println("Invalid choice, please choose again");
             ClassDriver.displayOptions();
+            System.out.print("-> ");
             choice = obj.nextInt();
         } 
         // Send input to our driver
